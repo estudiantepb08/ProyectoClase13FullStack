@@ -12,16 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :comment %>
-    <%= form.text_area :comment, id: :post_comment %>
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :post_title, class: 'form-control' %>
   </div>
 
   <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :post_title %>
-  </div>
+    <%= form.label :comment %>
+    <%= form.text_area :comment, id: :post_comment, class: 'form-control' %>
+  </div>  
 
-  <div class="actions">
+  <div class="actions class="btn btn-primary"">
     <%= form.submit %>
   </div>
 <% end %>
